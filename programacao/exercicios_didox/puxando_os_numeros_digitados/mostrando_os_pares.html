@@ -1,0 +1,18 @@
+<script>
+a=[1,2,3,4,5,6,7,8,9,10];
+document.write("Os numeros pares sao: ")
+repete=function(i){
+	if(i>9){
+		return;
+	}
+	else if(a[i]%2==1){
+		repete(i+1)
+	}
+	else{
+		document.write(a[i]);
+		repete(i+1);
+	}
+}
+repete(0)
+
+</script>

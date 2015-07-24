@@ -1,0 +1,36 @@
+<script>
+var quantidadepares=0;
+var quantidadeimpares=0;
+var numerospares=[];
+var numerosimpares=[];
+
+for(i=0;i<6;i++){
+	numeros=parseInt(prompt("Digite valor"));
+	resto_divisao=numeros%2;
+	if(resto_divisao==0){
+		quantidadepares++;
+		numerospares.push(numeros);
+
+	}
+
+	else if(resto_divisao!=0){
+		quantidadeimpares++;
+		numerosimpares.push(numeros);
+	}
+
+
+}
+document.write("A quantidade de números pares é de: "+quantidadepares+"<br>");
+document.write("Os numeros pares são: <br>");
+for(i=0;i<numerospares.length;i++){
+	document.write(numerospares[i]+"<br>");
+}
+
+document.write("A quantidade de números impares é de: "+quantidadeimpares+"<br>");
+document.write("Os numeros impares são: <br>");
+for(i=0;i<numerosimpares.length;i++){
+	document.write(numerosimpares[i]+"<br>");
+}
+
+
+</script>

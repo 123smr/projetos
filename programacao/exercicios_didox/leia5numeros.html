@@ -1,0 +1,17 @@
+leia 5 numeros
+e no final mostra os 3 maiores e os 2 menores
+
+
+<script>
+var osNumeros=[];
+for(i=0;i<5;i++){
+	var numeros=parseInt(prompt("Digite 5 numeros: "));
+	osNumeros.push(numeros);
+}
+osNumeros=osNumeros.sort(function(a,b){return a<b});
+
+
+document.write("Os tres maiores numeros sao: "+osNumeros[0]+","+osNumeros[1]+","+osNumeros[2]+"<br>");
+document.write("Os dois menores numeros sao: "+osNumeros[3]+","+osNumeros[4]+"<br>");
+
+</script>

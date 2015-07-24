@@ -1,0 +1,10 @@
+mostre("Informe a nota 1: ")
+nota1=leia
+mostre("Informe a nota 2: ")
+nota2=leia
+media=(nota1+nota2) /2
+se(media >= 7)
+mostra("Aluno Aprovado, sua nota foi: " +media)
+senão se (media<7)
+mostra("Aluno reprovado, sua nota foi: " +media)
+fim se

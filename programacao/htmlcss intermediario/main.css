@@ -1,0 +1,143 @@
+html{
+	font-size: 200%
+}
+
+
+
+main h1{
+	font-family:"open sans condensed", sans-serif;
+	font-size: 60px;
+	background-color: rgb(120,30,60);
+	color:rgb(255,255,255);
+	text-align: center;
+	padding: 20px;
+	margin: 0px;
+	border-bottom: 10px #000000 solid;
+	text-transform: uppercase;
+}
+
+main div{	
+	width: 720px;
+	margin: 0 auto 0 auto;
+		padding-bottom: 80px;
+
+}
+h2{
+	font-family:"open sans condensed", sans-serif;
+	font-size: 40px;
+	clear:both;
+	;
+}
+
+p{
+	font-family: "crimson text", sans-serif;
+	font-size: 16px;
+	text-align: justify;
+	line-height:2;
+	margin: 20px 0 20px 0;
+}
+
+p strong{
+	font-weight: bold;
+}
+p em{
+	font-style: italic;
+}
+a {
+	color:#851944;
+	text-decoration: none;
+}
+
+
+blockquote{
+	background-color:#D9E5E3;
+	padding: 16px;
+	border: 10px #C2CCCA solid;
+	border-bottom-color: #333;
+	border-right-color: #FFF;
+	width: 250px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+.fiat{
+	float:right;
+}
+.petrobras{
+	float:left;
+}
+aside{
+	font-family: "Open Sans condensed", sans-serif;
+	background-color: #3C1D3D;
+	color: #F2FFFC;
+	padding: 30px 0 30px 0;
+	text-align: center;
+}
+.icones-sociais li{	
+	display: inline-block;
+}
+
+nav h1{font-size: 30px;
+	padding-bottom: 25px;}
+
+ul{
+	color:#F2FFFC;
+	font-size:20px;
+	padding-bottom: 17px;
+}
+
+ul li a{
+	color:inherit;
+}
+
+footer{
+	font-family: "Open Sans condensed", sans-serif;
+	background-color: #000000;
+	color:#F2FFFC;
+	padding: 15px 0 15px 0;
+}
+
+.icones-sociais a{
+	display:inline-block;
+	width:40px;
+	height: 40px;
+	text-indent: -9999px;
+}
+
+.github{
+	background-image: url(imagem/github.png)
+}
+
+.twitter{
+	background-image: url(imagem/twitter.png)
+}
+.linkedin{
+	background-image: url(imagem/linkedin.png);
+}
+aside{
+	float:right;
+			width:20%;
+			position:relative;
+			top:317px;
+
+}
+aside{
+	clear:right;
+}
+
+main{
+	float:left;
+	width: 80%;
+}
+footer{
+	clear: both;
+	position:fixed;
+	bottom:0px;
+	width: 100%;
+}
+img{
+	position: absolute;
+	top:0px;
+	right:0px;
+	border: 10px #000000 solid;
+}
+

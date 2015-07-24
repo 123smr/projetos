@@ -1,0 +1,24 @@
+<script>
+nomes=[];
+medias=[];
+while(1==1){
+	alert("Este e o programa para mostrar a media dos alunos.\n Para continuar, digite 1, para sair digite 0.");
+	a=parseInt(prompt());
+	if(a==0) break;
+	else{
+		alert("Digite o nome do aluno: ");
+		nome=prompt();
+		alert("Digite a nota 1 do aluno "+nome);
+		nota1=parseInt(prompt());
+		alert("Digite a nota 2 do aluno "+nome);
+		nota2=parseInt(prompt());
+		media=(nota1+nota2)/2;
+		nomes.push(nome);
+		medias.push(media)
+	}	
+}
+for(i=0;i<nomes.length;i++){
+	document.write("aluno: "+nomes[i]+" media :"+medias[i]+"<br>");
+}
+
+</script>

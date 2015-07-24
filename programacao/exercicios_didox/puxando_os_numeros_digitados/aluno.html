@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Aluno</title>
+		<script type="text/javascript" src="
+				///Users/samir/Desktop/PROGRAMACAO/exercicios_didox/puxando_os_numeros_digitados/aluno.js"></script>
+	</head>
+	<body>
+		<script>
+			var pegaDado=function(i){
+				if(i>7){
+					return;
+				}
+				else{
+					new Aluno(
+						prompt("Digite o nome do aluno:"),
+						prompt("Digite a nota do aluno")
+					).salvar();
+				}
+				pegaDado(i+1)
+			}
+			pegaDado(0)
+
+			function listarUsuarios(){
+				document.write("Lista de alunos<br>");
+				document.write("<table border=\"1\">");
+				document.write("<tr>");
+				document.write("<td>Aluno</td>");
+				document.write("<td>Nota</td>");
+				document.write("</tr>");
+				var lista=Aluno.lista()
+				for(i=0;i<lista.length;i++){
+					document.write("<tr>");
+					document.write("<td>"+lista[i].nome+"</td>");
+					document.write("<td>"+lista[i].nota+"</td>");
+					document.write("</tr>");
+				}
+				document.write("</table><br><br><br>");
+			}
+			listarUsuarios()
+
+			document.write("A media da classe e de: "+Aluno.mediaAlunos());
+
+
+		</script>
+	</body>
+
+</html>

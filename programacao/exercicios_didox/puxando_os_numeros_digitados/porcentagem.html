@@ -1,0 +1,17 @@
+<script>
+valores=[2,4,6];
+var soma=0;
+repete=function(i){
+	debugger
+	if(i>3){
+		return;
+	}
+	else{
+		soma=soma+valores[i];
+		repete(i+1);
+	}
+}
+repete(0);
+var total=((soma*5)/100)+soma;
+document.write(total);
+</script>

@@ -1,0 +1,21 @@
+<script>
+
+alert("Digite 1 para POUPANÇA 2 para RENDA FIXA");
+tipo=prompt();
+tipo=parseInt(tipo);
+
+alert("Digite o valor do investimento: R$ ");
+valor=prompt();
+valor=parseInt(valor);
+if(tipo ==1){
+	poupanca=(valor*3)/100;
+	poupanca=valor+poupanca;
+	alert("Seu rendimento em POUPANÇA foi de: R$ "+poupanca)
+}
+else if(tipo ==2){
+	fixa=(valor*4)/100;
+	fixa=fixa+valor;
+	alert("Seu rendimento em RENDA FIXA foi de: R$ "+fixa)
+}
+</script>
+

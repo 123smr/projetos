@@ -1,0 +1,274 @@
+h1{
+    font-family: "open sans condensed", sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-bottom: .5em;
+}
+.titulo-principal{
+    background-color: #851944;
+    border-bottom: .2em solid black;
+    position: relative;
+
+}
+.subtitulo-principal{
+    font-family: "open sans condensed 700", sans-serif;
+    color: #ffffff;
+    font-size: .8em;
+    padding-bottom: 1em;
+}
+.foto-home {
+    border-radius: 10em;
+    height: 15em;
+    margin: 2em 0 1em 0;
+}
+.palavras-home{
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    color: #D5447E;
+    font-size: 400%;
+    position: absolute;
+}
+
+.eficiencia{
+    top: 50%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
+}
+.javascript{
+    position: absolute;
+    top:5%;
+    left:65%;
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+.design{
+    position: absolute;
+    top: 30%;
+    left:70%;
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+.otimizacoes{
+    position: absolute;
+    top:17%;
+    left:70%;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+.html5{
+    position: absolute;
+    top:30%;
+    left:20%;
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
+.boas-praticas{
+    position: absolute;
+    top:15%;
+    left:20%;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.codigo-limpo{
+    position: absolute;
+    top: 40%;
+    right:75%;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+.responsivo{
+    position: absolute;
+    top:20%;
+    right:70%;
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+.agilidade{
+    position: absolute;
+    top:40%;
+    right: 30%;
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+}
+.css3{
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+}
+.acessibilidade{
+    position: absolute;
+    top:5%;
+    left: 20%;
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+.banner-twitter p{
+    font-family: "Open Sans condensed";
+    font-size:1em;
+    color: #fff;
+    text-decoration: none;
+     padding: .8rem;
+    width: 10em;
+    position: absolute;
+    top: 4%;
+    right:0%;
+}
+.banner-twitter{
+    background-color:#3C1D3D;
+    border: .2em #000 solid; 
+    padding: 1.3rem;
+    width: 10em;
+    position: absolute;
+    top: 4%;
+    right:5.8%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.saudacao{
+    padding: 3em 0 7em 0;
+}
+.saudacao{
+        font-family: "Georgia";
+        padding-bottom: 2rem;
+
+}
+
+.saudacao p {
+    color: #99A;
+    line-height: 1;
+}
+.saudacao-inicio {
+    font-family: "Georgia";
+    font-size: 2em;
+  color: #889;
+}
+.saudacao-ultima-linha {
+    text-align: right;
+    display: block;
+}
+.saudacao strong {
+    color: #000;
+    font-size: 2em;
+    font-weight: 800;
+}
+.saudacao em {
+    color: #851944;
+    font-size: 3em;
+    font-style: italic;
+    display:inline-block;
+    -webkit-transform: rotate(-5deg) skew(-10deg);
+
+}
+.botao-index {
+    background-color: #851944;
+    color: #FFF;
+    border: .2em solid black;
+    width: 400px;
+    display: block;
+    text-align: center;
+    margin: 3rem auto 1rem auto;
+    padding: .7rem;
+
+}
+
+.trabalhos{
+    padding: 2em 0 1em 0;
+
+}
+.secao-inicio h2 {
+    text-transform: uppercase;
+    font-family: "open sans condensed", sans-serif;
+    font-size: 2em;
+    color: #ffffff;
+    padding: 0 0 .5em 1em;
+    text-align: left;
+}
+.trabalhos {
+    background-color: #3C1D3D;
+    border-top: 10px solid #000;
+    border-bottom: 10px solid #000;
+}
+.trabalhos ul {
+    margin: 1em 1em 2em 1em;
+    overflow: hidden;
+    border: 10px solid black;
+}
+.trabalhos li {
+    float: left;
+    width: 33.333%;
+}
+.trabalhos img {
+    width: 100%;
+    display: block;
+}
+.blog h4{
+    text-align: left;
+padding-left: 2em;
+padding-bottom: 1em
+}
+
+.blog {
+    position: relative;
+    padding: 2em 0 1em 0;
+    background-color: #999;
+    color: #FFF;
+    border-bottom: 10px solid #851944;
+}
+.blogpost{
+    background-color: #fff;
+    -moz-border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    border-radius: 2rem;
+    border: .5rem #999 solid;
+    padding: 1.5rem;
+    color: #000;
+    width: 20rem;
+    position: absolute;
+    top:10%;
+    right:5%;
+    text-align: left;
+}
+.blogpost strong{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.blog li{
+    text-align: left;
+    margin-left: 2rem;
+}
+.blog li a {
+    color: #FCF;
+}
+
+h3{
+    font-family: "open sans condensed", sans-serif;
+    font-size: 1.5em;
+    color: #ffffff;
+    padding: 1em 0 .5em 1em;
+    text-align: left;
+
+}
+footer {
+    background-color: #000;
+    color: #FFF;
+}
+footer p{
+    text-align: left;
+    padding-left: 1.6rem;
+    padding-bottom: 2rem;
+}
+footer a {
+    color: #F99;
+}
+main {
+    width: 100%;
+    padding-bottom: 0;
+    float: none;
+}

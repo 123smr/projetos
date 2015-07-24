@@ -1,0 +1,53 @@
+<script>
+a=0;
+while(a==0){
+	alert("Bem vindo ao programa da média.");
+	alert("Digite sua nota: ");
+	nota1=prompt();
+	nota1=parseInt(nota1);
+	alert("Digite sua outra nota: ");
+	nota2=prompt();
+	nota2=parseInt(nota2);
+	media=(nota1+nota2)/2;
+	if(media <=4){
+		alert("Reprovado. Sua média foi: "+media);
+	}
+	else if(media >4 && media <=7){
+		alert("Exame. Sua méfia foi: "+media);
+	}
+	else if(media >7 && media <=10){
+		alert("Aprovado. Sua média foi: "+media);
+	}
+	
+	alert("Digite\n 1 para sair \n 0 para continuar");
+	a=prompt();
+	a=parseInt(a);	
+}
+
+/*
+alert("Digite sua nota: ");
+nota1=prompt();
+nota1=parseInt(nota1);
+alert("Digite sua outra nota: ");
+nota2=prompt();
+nota2=parseInt(nota2);
+alert("Digite sua outra nota: ");
+nota3=prompt();
+nota3=parseInt(nota3);
+alert("Digite sua outra nota: ");
+nota4=prompt();
+nota4=parseInt(nota4);
+media=(nota1+nota2+nota3+nota4)/4;
+if(media <=4){
+	alert("Reprovado. Sua média foi: "+media);
+}
+else if(media >4 && media <=7){
+	alert("Exame. Sua méfia foi: "+media);
+}
+else if(media >7 && media <=10){
+	alert("Aprovado. Sua média foi: "+media);
+}
+*/
+
+
+</script>

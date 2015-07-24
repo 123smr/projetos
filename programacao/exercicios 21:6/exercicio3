@@ -1,0 +1,10 @@
+<script>
+
+a = prompt()
+if( a == 1 ){
+  a = 1 + 5
+}
+
+alert("o valor é: " + a)
+
+</script>

@@ -1,0 +1,20 @@
+<script>
+debugger
+var repete=function(valor){
+	if(valor>10){
+		return;
+	}
+	else if(valor==5 || valor==6){
+		repete(valor+1);
+	}
+	else{
+		document.write(valor+",");
+		repete(valor+1)
+	}
+	document.write("-");
+}
+document.write("Os numeros sao: <br>");
+repete(1)
+
+</script>
+

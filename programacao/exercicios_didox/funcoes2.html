@@ -1,0 +1,32 @@
+<script>
+var caixa={
+	calculaTabuada: function(numero){
+		while(numero<=10){
+			document.write("A tabuada de "+numero+":")
+			document.write("<br>")
+			
+			var multiplo=1;
+			while(multiplo<=10){
+				var tabuada=numero*multiplo;
+				document.write(numero+"X"+multiplo+"="+tabuada);
+				document.write("<br>");
+				multiplo=multiplo+1;
+			}
+			numero=numero+1;
+		}
+
+	},
+	maiorNumero: function(a,b){
+		if(a>b){
+			alert(a);
+		}	
+		else if(a<b){
+			alert(b);
+		}
+	}
+}
+caixa.calculaTabuada(10);
+caixa.maiorNumero(3,8);
+
+
+</script>

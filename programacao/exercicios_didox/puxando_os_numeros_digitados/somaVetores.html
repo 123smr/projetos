@@ -1,0 +1,46 @@
+<script>
+var vetor10Numeros=[4,7,5,8,2,15,9,6,10,11];
+var vetor5Numeros=[3,4,5,8,2];
+var divisoresNumeroImpar=[];
+var somaNumeroPar=[];
+mensagem=function(mensagem){
+	document.write(mensagem+" , ");
+}
+
+repete=function(i){
+	if(i>9){
+		return;
+	}
+	else if(vetor10Numeros[i]%2==1){
+		var soma=0;
+		var quantidadeDivisores=0;
+		while(soma<vetor5Numeros.length){
+			if(vetor10Numeros[i]%vetor5Numeros[soma]==0){
+				quantidadeDivisores++
+			}
+			soma++;
+		}
+		divisoresNumeroImpar.push(quantidadeDivisores);
+		repete(i+1);
+
+	}
+	else{
+		var soma=0;
+		
+		while(soma<vetor5Numeros.length){
+			vetor10Numeros[i]=vetor10Numeros[i]+vetor5Numeros[soma];
+			soma++;
+		}
+		somaNumeroPar.push(vetor10Numeros[i]);
+		repete(i+1);
+	}
+}	
+repete(0)
+mensagem("Os divisores impares sao: ");
+for(i=0;i<divisoresNumeroImpar.length;i++){
+	mensagem(divisoresNumeroImpar[i]);
+}
+mensagem("Os numeros pares somados sao "+somaNumeroPar.join(", "));
+
+</script>
+

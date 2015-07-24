@@ -1,0 +1,122 @@
+<html>
+	<head>
+		<title>Produtos</title>
+		<script type="text/javascript" src="
+				///Users/samir/Desktop/PROGRAMACAO/exercicios_didox/puxando_os_numeros_digitados/estoque/produto.js"></script>
+		<script type="text/javascript" src="
+				///Users/samir/Desktop/PROGRAMACAO/exercicios_didox/puxando_os_numeros_digitados/estoque/cliente.js"></script>
+	</head>
+	<body>
+		<script>
+		cargaDeProdutos=function(){
+			for(i=1;i<=20;i++){
+				var produto=new Produto();
+				produto.codigo=i;
+				produto.nome="nome"+i;
+				produto.quantidade=10;
+				produto.salvar();
+			}
+		}
+		cargaDeProdutos()
+		var codigo;
+		var produto;
+		capturandoProdutoCliente=function(){
+			while(1==1){
+				codigo=parseInt(prompt("Digite o codigo do produto"));
+				produto=Produto.buscaProdutoPorCodigo(codigo);
+				if(produto==undefined){
+					alert("Codigo inexistente");
+				}
+				else{
+					break
+				}
+			}
+		}
+		while(1==1){
+			var codigo=prompt("Bem vindo ao programa de vendas\nDigite 1 para cadastrar seu pedido\n0 para sair");
+			if(codigo==0){
+				break
+			}
+			else{
+				var c=new Cliente();
+				c.nome=prompt("Digite o nome");
+				capturandoProdutoCliente();
+				while(1==1){
+					var quantidade=parseInt(prompt("Digite a quantidade"));
+					if(produto.quantidade<1){
+						alert("Nao temos mais estoque deste produto");
+						capturandoProdutoCliente();
+					}
+					else if(quantidade>produto.quantidade){
+						alert("Quantidade indisponivel");
+					}
+					else{
+						break;
+
+					}
+				}	
+
+				var p=new Produto();
+				p.codigo=codigo;
+				p.quantidade=quantidade;
+				p.nome=produto.nome;
+				c.produto=p;
+				c.salvar();
+				produto.quantidade-=quantidade;
+				produto.atualizar();
+			}
+		}
+		function tabelaProdutos(){
+			document.write("Tabela de Produtos");
+			document.write("<table border=\"1\">");
+			document.write("<tr>");
+			document.write("<td>Codigo Produto</td>");
+			document.write("<td>Nome</td>");
+			document.write("<td>Quantidade</td>");
+			document.write("</tr>");
+
+			for(i=0;i<Produto.bancoProduto.length;i++){
+				document.write("<tr>");
+				document.write("<td>"+Produto.bancoProduto[i].codigo+"</td>");
+				document.write("<td>"+Produto.bancoProduto[i].nome+"</td>");
+				document.write("<td>"+Produto.bancoProduto[i].quantidade+"</td>");
+				document.write("</tr>");
+			}
+			document.write("</table><br><br><br>");
+		}
+		tabelaProdutos()
+
+		function tabelaClientes(){
+			document.write("Tabela de Produtos");
+			document.write("<table border=\"1\">");
+			document.write("<tr>");
+			document.write("<td>Nome Cliente</td>");
+			document.write("<td>Nome Produto</td>");
+			document.write("<td>Codigo Produto</td>");
+			document.write("<td>Quantidade comprada</td>");
+			document.write("</tr>");
+			for(i=0;i<Cliente.bancoCliente.length;i++){
+				document.write("<tr>");
+				document.write("<td>"+Cliente.bancoCliente[i].nome+"</td>");
+				document.write("<td>"+Cliente.bancoCliente[i].produto.nome+"</td>");
+				document.write("<td>"+Produto.bancoProduto[i].codigo+"</td>");
+				document.write("<td>"+Cliente.bancoCliente[i].produto.quantidade+"</td>");
+				document.write("</tr>");
+			}
+			document.write("</table><br><br><br>");		
+		}
+		tabelaClientes()
+
+
+
+
+
+
+
+
+
+
+
+		</script>
+	</body>
+</html>

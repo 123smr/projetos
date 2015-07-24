@@ -1,0 +1,44 @@
+<script>
+var vendas_total=[];
+var percentual_total=[];
+var nomes_total=[];
+var vendas_mais_comissao=[];
+var somatoria=0;
+var maiorValorAReceber=0;
+var menorValorAReceber=9999999999;
+var vendedorcampeao="";
+var vendedorlixo="";
+
+for(i=0;i<3;i++){
+	var vendas=parseFloat(prompt("Digite o total de vendas: "));
+	vendas_total.push(vendas);
+	var percentual=parseInt(prompt("Digite o percentual de comissao: "));
+	percentual_total.push(percentual);
+	var nome=prompt("Digite o nome do vendedor: ");
+	nomes_total.push(nome);
+
+	var soma_com_comissao=((vendas*percentual)/100)+vendas;
+	vendas_mais_comissao.push(soma_com_comissao);
+	
+	somatoria=somatoria+vendas;
+
+	if(maiorValorAReceber<=soma_com_comissao){
+		maiorValorAReceber=soma_com_comissao;
+		vendedorcampeao=nome;
+	}
+	if(menorValorAReceber>=soma_com_comissao){
+		menorValorAReceber=soma_com_comissao;
+		vendedorlixo=nome;
+	}
+}
+
+for(i=0;i<nomes_total.length;i++){
+	document.write("Nome do vendedor: "+nomes_total[i]+" — Valor a receber: "+vendas_mais_comissao[i]+"<br>");
+}
+document.write("O total de vendas de todos os vendedores e de: "+somatoria+"<br>");
+
+document.write("O maior valor a receber é: "+maiorValorAReceber+" pelo(a) vendedor(a): "+vendedorcampeao+"<br>");
+document.write("O menor valor a receber é: "+menorValorAReceber+" pelo(a) vendedor(a): "+vendedorlixo+"<br>");
+
+
+</script>

@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Aluno</title>
+		<script type="text/javascript" src="
+				///Users/samir/Desktop/PROGRAMACAO/exercicios_didox/puxando_os_numeros_digitados/aluno2/aluno.js"></script>
+	</head>
+	<body>
+		<script>
+		var pegaDado=function(i){
+
+			if(i>5){
+				return;
+			}
+			else{
+				new Aluno(
+					prompt("Digite o nome do aluno"),
+					prompt("Digite a nota 1"),
+					prompt("Digite a nota 2")
+				).salvar();
+			}
+			pegaDado(i+1);
+		}
+		pegaDado(0);
+
+		function tabelaUsuarios(){
+			document.write("Relatorio de notas");
+			document.write("<table border=\"1\">");
+			document.write("<tr>")
+			document.write("<td>Aluno</td>");
+			document.write("<td>Nota1</td>");
+			document.write("<td>Nota2</td>");
+			document.write("<td>Media</td>");
+			document.write("<td>Situacao</td>");
+			document.write("</tr>");
+			var lista=Aluno.bancoEstatico;
+			for(i=0;i<lista.length;i++){
+				document.write("<tr>");
+				document.write("<td>"+lista[i].aluno+"</td>")
+				document.write("<td>"+lista[i].nota1+"</td>")
+				document.write("<td>"+lista[i].nota2+"</td>")
+				document.write("<td>"+lista[i].media()+"</td>")
+				document.write("<td>"+lista[i].situacao()+"</td>")
+				document.write("</tr>");
+			}
+			document.write("</table><br><br><br>")
+		}
+		tabelaUsuarios()
+		document.write("A media da classe e de: "+Aluno.mediaClasse()+"<br>");
+		document.write("A quantidade de aprovados e de: "+Aluno.QuantidadeAprovados()+"<br>");
+		document.write("A quantidade de alunos em exame: "+Aluno.QuantidadeExame()+"<br>");
+		document.write("A quantidade de reprovados e de: "+Aluno.QuantidadeReprovados()+"<br>");
+		</script>
+	</body>
+</html>

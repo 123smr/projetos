@@ -1,0 +1,126 @@
+h1{
+	font-family: "open sans condensed", sans-serif;
+	font-size: 60px;
+	text-transform: uppercase;
+	background-color: rgb(120,30,60);
+	color: rgb(255,255,255);
+	text-align: center;
+	border-bottom: 10px #000000 solid;
+	padding: 20px;
+}
+
+h2{
+	font-family: "open sans condensed", sans-serif;
+	font-size: 30px;
+	padding: 20px 0 20px 0;
+	clear:both;
+}
+h3{
+	font-family: "open sans condensed", sans-serif;
+	font-size: 22px;
+	padding-bottom: 20px;
+}
+ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	line-height: 1.5;
+}
+
+p{	
+	font-family: "crimson", sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	text-align: justify;
+}
+
+blockquote{
+	font-family: "crimson", sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	background-color:#D9E5E3;
+	border: 10px #C2CCCA solid;
+	width: 200px;
+	box-sizing:border-box;
+	}
+.container{
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px 0;
+}
+
+aside{
+	font-family: "open sans condensed", sans-serif;
+	background-color: #3C1D3D;
+	color:#ffffff;
+	padding: 20px;
+	text-align: center;
+}
+
+.github{
+	background-image: url(imagem/github.png);
+}
+.twitter{
+		background-image: url(imagem/twitter.png);
+}
+.linkedin{	
+	background-image: url(imagem/linkedin.png);
+}
+
+.icones li{
+	display: inline-block;
+	font-size: 0px
+}
+
+.icones a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+
+.fiat{
+	float: right;
+	margin-left: 25px;
+}
+.fiat p{
+	text-align: right;
+}
+
+.fiat cite{
+	text-align: right;
+}
+
+.petrobras{
+	float:left;
+	margin-right: 25px;
+		margin-bottom: 30px;
+
+}
+
+.petrobras p{
+	text-align: left;
+}
+.petrobras cite{
+	text-align: left;
+
+}
+.main{
+	float: left;
+	width: 80%;
+}
+.aside,img{
+	box-sizing:border-box;
+}
+aside{
+	float: right;
+	position:relative;
+	top: 310px;	
+	width: 20%;
+}
+
+img{
+	position: absolute;
+	top:0px;
+	right:0px;
+
+}
