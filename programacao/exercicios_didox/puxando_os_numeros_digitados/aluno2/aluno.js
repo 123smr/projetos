@@ -11,7 +11,7 @@ Aluno=function(aluno,nota1,nota2){
 	}
 
 
-	//metodos privados//
+	//metodos publicos//
 	this.media=function(){
 		return parseFloat((this.nota1+this.nota2)/2);
 	}
